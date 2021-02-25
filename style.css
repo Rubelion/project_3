@@ -1,0 +1,168 @@
+/* Global View / Desktop view */
+
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #ebebeb;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-container {
+    background-color: rgb(70, 70, 70);
+    min-width: 100px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0px auto;
+    /* background-color: hotpink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo :nth-child(1) {
+    font-weight: bold;
+    color: white;
+}
+header .logo :nth-child(2) {
+    color: white;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+.logo {
+    /* flex: 2; */
+}
+
+nav  {
+    /* display: inline-block; */
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid;
+    /* border-radius: 3px; */
+    margin-left: 15px;
+}
+
+.container {
+    /* background-color: salmon; */
+    max-width: 1024px;
+    min-height: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(0, 209, 146);
+
+}
+
+.col p {
+    color: white;
+    padding: 20px 25px;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+
+/* Tablet View */
+
+@media (max-width: 768px) {
+
+  .col {
+      width: 46%;
+  }
+
+  .hide-desktop-only {
+    display: block;
+}
+/* header {
+    
+    display: block;
+    text-align: center;
+} */
+
+.header-container {
+    position: relative;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+nav a {
+    display: block;
+    margin-left: 0;
+}
+
+nav {
+    display: none;
+}
+
+.logo {
+    padding: 30px 0px;
+}
+.mob-wrapper {
+    display: block;
+    padding-right: 30px;
+}
+.mob-menu {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.navbutton {
+    display: block;
+    background-color: coral;
+    padding: 15px 25px;
+    margin-left: -60px;
+    border: 1px solid;
+    text-align: center;
+}
+}
+
+/* Mobile View */
+
+@media (max-width: 400px) {
+  
+.col {
+    width: 100%;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+
+}
